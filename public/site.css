@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Nunito&display=swap');
+
+body {
+  background-image: url("/ibu-photographer-nQFOr2WJDXY-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 100%;
+}
+
+.pagination {
+    display: flex;
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  .pagination a {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    color: black;
+    background: #FFFFFF;
+  }
+  
+  .pagination__link {
+    font-weight: bold;
+  }
+  
+  .pagination__link--active a {
+    color: #fff;
+    background: #FD9141;
+  }
+  
+  .pagination__link--disabled a {
+    color: rgb(198, 197, 202);
+    border: 1px solid rgb(198, 197, 202);
+  }
+  span{
+    font-weight: bold;
+  }
+  #flag {
+    width: 30px;
+  }
+  #icon {
+    width: 70px;
+  }
+  #curTemp {
+    font-size: 40pt;
+    font-weight: bolder;
+  }
+  #root {
+    font-family: 'Nunito', sans-serif;
+    
+  }
+  #pageName {
+    font-family: 'Indie Flower', cursive;
+    font-size: 20pt;
+  }
+  #theLocal{
+    width: 25rem;
+    text-align: center;
+    padding: 70px 0;
+    border-radius: 15pt;
+  }
+  #main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  #results{
+    width: 21rem;
+    text-align: center;
+    padding: 60px 0;
+    border-radius: 15pt;
+  }
+#card-title{
+  font-size: 20pt;
+  color: gray;
+}
+#feels{
+  color: gray;
+}
+#desc{
+  font-size: 15pt;
+}  
