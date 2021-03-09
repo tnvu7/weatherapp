@@ -10,11 +10,9 @@ class App extends React.Component {
         this.updateCities = this.updateCities.bind(this);
     }
     updateCities(newData) {
-        console.log("in App - updating Cities");
         let tmp = this.state.userhry.concat(newData);
         this.setState({userhry: tmp}, () => {
-            console.log(this.state.userhry);
-            
+            console.log(this.state.userhry); 
         });
     }
     render() {

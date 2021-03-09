@@ -22,7 +22,6 @@ class City extends React.Component {
             let flag = "http://openweathermap.org/images/flags/" + foundObj[0].sys.country.toLowerCase() + ".png";
             let icon = "http://openweathermap.org/img/w/" + foundObj[0].weather[0].icon + ".png";
         this.setState({loc: foundObj[0], ss: ss, sr: sr, flag: flag, icon: icon, mounted: true});
-        console.log("after setting");
     }
     render() {
         return(

@@ -2,12 +2,9 @@ import React, { Component } from "react";
 import { BrowserRouter, Route, Switch, Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Home from "./Home";
 import City from "./City";
-import App from "./App";
 
 class Routing extends Component {
     constructor(props) {

@@ -47,7 +47,7 @@ class Home extends Component {
     SubmitHandler = (event) => {
         event.preventDefault();
         if (this.state.input == null)
-            this.setState({ errMsg: "Please enter a valid city" });
+            this.setState({ errMsg: <Alert variant="danger">Please enter a valid city</Alert> });
         else {
             this.getData(this.state.input);
         }
@@ -156,20 +156,12 @@ class Home extends Component {
         }
     }
     callHistory(loc) {
-        console.log("callHistory");
         let tmp = this.state.visitedCities.filter(obj => obj.id == loc.id);
         if (tmp.length == 0) {
             this.setState(prevState => ({
                 visitedCities: [...prevState.visitedCities,
                 {
-                    "name": loc.name + ", " + loc.sys.country,
                     "id": loc.id,
-                    "curTemp": loc.main.temp + " ℃",
-                    "desc": loc.weather[0].description,
-                    "range": loc.main.temp_min + " ℃ / " + loc.main.temp_max + " ℃",
-                    "humidity": loc.main.humidity + "%",
-                    "wind": loc.wind.speed + "m/s",
-                    "geo": loc.coord.lon + loc.coord.lat
                 }]
             }));
             this.props.updateCities(loc);
@@ -208,7 +200,6 @@ class Home extends Component {
     render() {
         return (
             <div className="container" >
-                <br />
                 <Form id="main" inline>
                     <Form.Control type="text" placeholder="Search" className="mr-sm-2" onChange={this.onChange} onKeyDown={this.handleInput} />
                     <Button variant="outline-warning" onClick={this.SubmitHandler}>Search</Button>
