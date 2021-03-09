@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Card from "react-bootstrap/card";
+import Card from "react-bootstrap";
 
 class Local extends Component {
     constructor(props){
