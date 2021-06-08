@@ -90,6 +90,7 @@ class Home extends Component {
                 }
             });
         }
+        
         fetch(`https://api.openweathermap.org/data/2.5/group?id=${ids}&units=metric&appid=3b6864aba291bb12fdff92ba63aefe6f`)
             .then((res) => {
                 if (res.status == 404) {
