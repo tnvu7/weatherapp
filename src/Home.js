@@ -202,7 +202,7 @@ class Home extends Component {
         return (
             <div className="container" >
                 <Form id="main" inline>
-                    <Form.Control type="text" placeholder="Search (ie: Toronto OR London, US)" className="mr-sm-2" onChange={this.onChange} onKeyDown={this.handleInput} />
+                    <Form.Control type="text" placeholder="Search (ie: Toronto OR London,US)" className="mr-sm-2" onChange={this.onChange} onKeyDown={this.handleInput} />
                     <Button variant="outline-warning" onClick={this.SubmitHandler}>Search</Button>
                 </Form><br />
                 <div id="main"> {this.state.errMsg}  </div><br />
