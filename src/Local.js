@@ -32,7 +32,7 @@ class Local extends Component {
             city: data.name + ", " + data.sys.country,
             curTemp: data.main.temp + " ℃",
             desc: data.weather[0].description,
-            range: data.main.temp_min + " ℃ / " + data.main.temp_max + " ℃",
+            range: data.main.temp_min + " ℃ to " + data.main.temp_max + " ℃",
             flagURL: flagURL
         });
         } catch (err) {console.log("ERROR: " + err)};
